@@ -7,7 +7,7 @@ export const ModelCard = ({model}:Props)=>{
     return(
         <div 
             style={{backgroundImage: `url(${model.imgUrl})`}}
-            className="w-[90vw] md:w-[70vw] lg:w-[55dvw] flex-shrink-0 inline-block bg-no-repeat bg-cover aspect-[9/7] md:aspect-[9/6] lg:aspect-[9/5] selection:bg-transparent bg-zinc-200 rounded-3xl border overflow-hidden transition-all" >
+            className="w-[90vw] md:w-[70vw] lg:w-[55dvw] flex-shrink-0 inline-block bg-no-repeat bg-cover aspect-[9/7] md:aspect-[9/6] lg:aspect-[9/5] selection:bg-transparent bg-zinc-200 dark:bg-zinc-800 rounded-3xl border overflow-hidden transition-all" >
                 <div className="w-full h-full grid grid-rows-3 bg-gradient-to-t from-black/80 via-transparent to-transparent p-4 sm:p-6 text-white" >
                     <div>
                         <span className="text-xs sm:text-sm font-light drop-shadow-xl drop-shadow-black" >

@@ -22,12 +22,12 @@ export const Navbar = ()=> {
                 <WorkspaceDropdown/>
             </div>
             <div>
-                <div className="bg-zinc-100 flex rounded-2xl not-md:hidden p-1.5 gap-2" >
+                <div className="bg-zinc-100 dark:bg-zinc-900 flex rounded-2xl not-md:hidden p-1.5 gap-2" >
                     {
                         navigation.map((n,i)=>(
                             <Button
                                 key={i} 
-                                className={`text-black w-12 rounded-xl cursor-pointer 
+                                className={`text-black dark:text-white w-12 rounded-xl cursor-pointer 
                                     ${ currentPath === n.link 
                                     ? 'bg-white hover:bg-zinc-100  dark:bg-black dark:hover:bg-zinc-900 ' 
                                     : 'bg-transparent hover:bg-white shadow-none dark:bg-transparent dark:hover:bg-black'}`}

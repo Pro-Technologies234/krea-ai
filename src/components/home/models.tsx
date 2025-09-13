@@ -47,7 +47,7 @@ export const ModelCarousel = () => {
                 key={i}
                 onClick={() => setCurrent(i)}
                 className={`h-2 w-2 rounded-full transition ${
-                i === current ? "bg-black" : "bg-gray-400"
+                i === current ? "bg-black dark:bg-white" : "bg-gray-400 dark:bg-zinc-800"
                 }`}
             />
             ))}
