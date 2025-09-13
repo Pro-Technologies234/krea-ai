@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { Button } from "../ui/button"
 import { usePathname } from "next/navigation"
 import { WorkspaceDropdown } from "./workspace-dropdown"
+import { ModeToggle } from "./mode-toggle"
 
 export const Navbar = ()=> {
     const currentPath = usePathname()
@@ -49,6 +50,7 @@ export const Navbar = ()=> {
                 <Button size={'icon'} variant={'secondary'} >
                     <Bell/>
                 </Button>
+                <ModeToggle/>
                 <Avatar>
                     <AvatarImage src={"https://github.com/evilrabbit.png"} />
                     <AvatarFallback>PK</AvatarFallback>
